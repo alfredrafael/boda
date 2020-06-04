@@ -9,12 +9,12 @@ import {
 
 const items = [
   {
-    src: 'https://placekitten.com/1350/700', //'https://via.placeholder.com/1400x700.png',
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/20-scaled-e1591227665526.jpeg', //'https://via.placeholder.com/1400x700.png',
     altText: 'Slide 1',
     caption: 'Slide 1'
   },
   {
-    src: 'https://placekitten.com/1375/700', //'https://via.placeholder.com/1400x700.png/0000FF/808080',
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/3-scaled.jpeg', //'https://via.placeholder.com/1400x700.png/0000FF/808080',
     altText: 'Slide 1',
     caption: 'Slide 1'
   },
