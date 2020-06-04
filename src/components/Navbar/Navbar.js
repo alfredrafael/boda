@@ -14,7 +14,7 @@ import { NavBarLogo } from './StyledNavbar';
 import './CssNavbar.css';
 import $ from 'jquery';
 
-$(".navbar-fading-effect").css("background", "rgba(4, 1, 130, .8)");
+$(".navbar-fading-effect").css("background", "rgba(0, 0, 0, .8)");
 
 // window.history.pushState({}, '', '/') //AMAZING
 
@@ -24,15 +24,15 @@ const Example = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   useEffect(() => {
-    $(".navbar-fading-effect").css("border-bottom", "1px solid rgba(4, 1, 130, .10)");
+    $(".navbar-fading-effect").css("border-bottom", "1px solid rgba(0, 0, 0, .10)");
 
     window.onscroll = () => {
       var scrollStatus = $(window).scrollTop();
       if (scrollStatus > 115) {
-        $(".navbar-fading-effect").css("background", "rgba(4, 1, 130, .8)"); // changes to...
+        $(".navbar-fading-effect").css("background", "rgba(0, 0, 0, .8)"); // changes to...
         $(".navbar-fading-effect").css("transition", "1s");
       } else {
-        $(".navbar-fading-effect").css("background", "rgba(4, 1, 130, .15)"); // scrolls back not back to default-color, but this...
+        $(".navbar-fading-effect").css("background", "rgba(0, 0, 0, 0)"); // scrolls back not back to default-color, but this...
       }
     }
   });

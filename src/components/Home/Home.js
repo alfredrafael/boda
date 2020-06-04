@@ -5,25 +5,24 @@ import logo from "../../logo.svg";
 import HeroSlider from '../HeroSlider';
 import Navbar from '../Navbar';
 import AwesomeSlider from 'react-awesome-slider';
-import AwsSliderStyles from 'react-awesome-slider/src/styles.scss';
+import 'react-awesome-slider/dist/styles.css';
 
 const Home = () => {
 
   const slider = (
-    <AwesomeSlider cssModule={AwsSliderStyles}>
-      <div data-src="/path/to/image-0.png" />
-      <div data-src="/path/to/image-1.png" />
+    <AwesomeSlider>
+      <div data-src="https://alfredorafael.com/wp-content/uploads/2020/06/20.jpeg" />
+      <div data-src="https://alfredorafael.com/wp-content/uploads/2020/06/3.jpeg" />
       <div data-src="/path/to/image-2.jpg" />
     </AwesomeSlider>
   );
-
   return(
     <div style={{color: 'black'}}>
     <HeroSlider />
     <div style={{height: '100vh'}}>
     <h1> Welcome </h1>
-    {slider}
-  
+   {slider}
+);
 
     </div>
   </div>
