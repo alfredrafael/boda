@@ -67,6 +67,8 @@ const CardComponent = () => {
 return(
     <React.Fragment>
     <Card className={classes.card}>
+    <a href='/wedding-day'>
+
             <CardMedia
               className={classes.cardMedia}
               image="https://source.unsplash.com/random"
@@ -88,6 +90,7 @@ return(
                 Edit
               </Button>
             </CardActions>
+      </a>
           </Card>
     </React.Fragment>
 )}
