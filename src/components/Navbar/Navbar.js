@@ -31,6 +31,7 @@ const Example = (props) => {
       if (scrollStatus > 115) {
         $(".navbar-fading-effect").css("background", "rgba(0, 0, 0, .8)"); // changes to...
         $(".navbar-fading-effect").css("transition", "1s");
+        $(".navbar-border-shadow").css("box-shadow", "0 5px 5px -2px rgba(0,0,0,.2) !important");
       } else {
         $(".navbar-fading-effect").css("background", "rgba(0, 0, 0, 0)"); // scrolls back not back to default-color, but this...
       }
@@ -45,7 +46,7 @@ const Example = (props) => {
         <Navbar dark expand="md" className="navbar-fading-effect navbar-border-shadow navbar-css" sticky={'top'}>
           <Container>
             <NavbarBrand href="/">
-              <img class="navbar-logo" alt="Alfredo Rafael Logo" src={'https://alfredorafael.com/wp-content/uploads/2019/02/newWhite.png'} style={{ maxWidth: '34%' }} />
+              <img class="navbar-logo" alt="Suzy & Jose Logo" src={'https://alfredorafael.com/wp-content/uploads/2020/06/sj-white.png'} style={{ maxWidth: '17%' }} />
             </NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>

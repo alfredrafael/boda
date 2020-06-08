@@ -5,11 +5,11 @@
 } */
 
 .navbar-css {  
-    margin-bottom: -7%;
+    margin-bottom: -11%;
     }
     
     .navbar-border-shadow {
-      box-shadow: 0 5px 5px -2px rgba(0,0,0,.2) !important;    
+      /* box-shadow: 0 5px 5px -2px rgba(0,0,0,.2) !important;     */
     }
   
   .navbar-logo {

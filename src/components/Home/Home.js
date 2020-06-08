@@ -2,6 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import HeroSlider from '../HeroSlider';
 import CardComponent from '../CardComponent';
+import AppFooter from '../AppFooter';
 import 'react-awesome-slider/dist/styles.css';
 
 import AppBar from '@material-ui/core/AppBar';
@@ -52,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
 
 
 
@@ -79,6 +80,8 @@ const Home = () => {
       ))}
     </Grid>
   </Container>
+  <AppFooter/>
+
   </>
 )};
 

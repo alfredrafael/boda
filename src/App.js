@@ -4,7 +4,7 @@ import Home from './components/Home';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //import { GlobalStyle } from './AppGlobalStyle';
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+import Footer from './components/AppFooter/AppFooter';
 import FetchingCountries from './components/FetchingCountries';
 import Country from './components/Country';
 import WeddingDay from './components/WeddingDay';
@@ -28,7 +28,6 @@ const App = () => {
        {/* //////////////////////////////////////////////////////////////////////// */}
         
 
-         <Footer/>
        </Router>
   
     
