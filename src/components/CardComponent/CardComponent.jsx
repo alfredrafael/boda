@@ -51,18 +51,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
+const CardComponent = (props) => {
 
-
-
-
-
-
-const CardComponent = () => {
-
-
-  const classes = useStyles();
+  
+const classes = useStyles();
 
 return(
     <React.Fragment>
@@ -74,14 +67,16 @@ return(
               image="https://source.unsplash.com/random"
               title="Image title"
             />
+
             <CardContent className={classes.cardContent}>
               <Typography gutterBottom variant="h5" component="h2">
-                Heading
+              {props.title}
               </Typography>
               <Typography>
                 This is a media card. You can use this section to describe the content.
               </Typography>
             </CardContent>
+            
             <CardActions>
               <Button size="small" color="primary">
                 View

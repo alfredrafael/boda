@@ -29,7 +29,7 @@ const Example = (props) => {
     window.onscroll = () => {
       var scrollStatus = $(window).scrollTop();
       if (scrollStatus > 115) {
-        $(".navbar-fading-effect").css("background", "rgba(0, 0, 0, .8)"); // changes to...
+        $(".navbar-fading-effect").css("background", "rgba(0, 200, 255, .5)"); // changes to...
         $(".navbar-fading-effect").css("transition", "1s");
         $(".navbar-border-shadow").css("box-shadow", "0 5px 5px -2px rgba(0,0,0,.2) !important");
       } else {

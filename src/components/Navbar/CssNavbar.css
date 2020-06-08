@@ -6,7 +6,10 @@
 
 .navbar-css {  
     margin-bottom: -11%;
-    }
+    font-family: 'Dancing Script', cursive;
+    font-size: 140%;
+    font-weight: thin;
+  }
     
     .navbar-border-shadow {
       /* box-shadow: 0 5px 5px -2px rgba(0,0,0,.2) !important;     */

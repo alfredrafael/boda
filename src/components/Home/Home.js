@@ -6,15 +6,8 @@ import AppFooter from '../AppFooter';
 import 'react-awesome-slider/dist/styles.css';
 
 import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
@@ -53,36 +46,43 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+const cards = [{title: 'First', id: 1}, {title: 'Second', id: 2}];
 
+const cards2 = [ {title: 'Third', id: 3}, {title: 'Cuatro', id: 1}, {title: 'Cinco', id: 2},];
 
 
 const Home = () => {
 
   const classes = useStyles();
 
+  const renderCard = cards.map((card, index) => {
+    return <Grid item key={card.index} xs={12} sm={6} md={6}>
+             <CardComponent title={card.title}/>
+          </Grid> 
+  });
+
+  const renderCard2 = cards2.map((card, index) => {
+    return <Grid item key={card.index} xs={12} sm={6} md={4} style={{justifyContent: 'space-around'}}>
+             <CardComponent title={card.title}/>
+          </Grid> 
+  });
+
   return(
-    <>
+    <React.Fragment>
     <HeroSlider/>
     <Container className={classes.cardGrid} maxWidth="md">
-    {/* End hero unit */}
     <Grid container spacing={4}>
-      {cards.map((card) => (
-        <Grid item key={card} xs={12} sm={6} md={4}>
-
-        {
-
-          <CardComponent />
-
-        }
-         
-        </Grid>
-      ))}
+      {renderCard}
     </Grid>
-  </Container>
+    </Container>
+    <Container>
+    <Grid container spacing={3} style={{marginBottom: '3%'}}>
+    {renderCard2}
+    </Grid>
+    </Container>
   <AppFooter/>
 
-  </>
+  </React.Fragment>
 )};
 
 
