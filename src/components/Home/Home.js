@@ -46,9 +46,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [{title: 'First', id: 1}, {title: 'Second', id: 2}];
+const cards = [
+  {
+    title: 'Our Wedding', 
+    id: 1, 
+    redirectLink: '/wedding-day',
+    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/1-scaled.jpeg', 
+  }, {
+    title: 'India Trip', 
+    id: 2, 
+    redirectLink: '/', 
+    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/2-scaled.jpeg',
+  },
+];
 
-const cards2 = [ {title: 'Third', id: 3}, {title: 'Cuatro', id: 1}, {title: 'Cinco', id: 2},];
+const cards2 = [ {title: 'Third', id: 3, pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/1-scaled.jpeg'}, {title: 'Cuatro', id: 1, pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/1-scaled.jpeg',}, {title: 'Cinco', id: 2, pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/1-scaled.jpeg'},];
 
 
 const Home = () => {
@@ -57,13 +69,13 @@ const Home = () => {
 
   const renderCard = cards.map((card, index) => {
     return <Grid item key={card.index} xs={12} sm={6} md={6}>
-             <CardComponent title={card.title}/>
+             <CardComponent title={card.title} redirectLink={card.redirectLink} pictureSource={card.pictureSource}/>
           </Grid> 
   });
 
   const renderCard2 = cards2.map((card, index) => {
     return <Grid item key={card.index} xs={12} sm={6} md={4} style={{justifyContent: 'space-around'}}>
-             <CardComponent title={card.title}/>
+             <CardComponent title={card.title} redirectLink={card.redirectLink} pictureSource={card.pictureSource}/>
           </Grid> 
   });
 

@@ -57,19 +57,21 @@ const CardComponent = (props) => {
   
 const classes = useStyles();
 
+
 return(
     <React.Fragment>
     <Card className={classes.card}>
-    <a href='/wedding-day'>
-
+    <a href={props.redirectLink}>
+{
+}
             <CardMedia
               className={classes.cardMedia}
-              image="https://source.unsplash.com/random"
+              image={props.pictureSource}
               title="Image title"
             />
 
             <CardContent className={classes.cardContent}>
-              <Typography gutterBottom variant="h5" component="h2">
+              <Typography gutterBottom variant="h5" component="h2" style={{textAlign: 'center'}}>
               {props.title}
               </Typography>
               <Typography>
