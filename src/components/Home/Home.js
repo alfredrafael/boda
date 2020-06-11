@@ -46,35 +46,52 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [
+const cards2 = [
   {
-    title: 'Our Wedding', 
+    title: 'Uno', 
     id: 1, 
     redirectLink: '/wedding-day',
-    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/1-scaled.jpeg', 
+    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/13-scaled.jpeg', 
   }, {
-    title: 'India Trip', 
+    title: 'Dos', 
     id: 2, 
     redirectLink: '/', 
-    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/2-scaled.jpeg',
+    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/Screen-Shot-2020-06-10-at-10.06.44-PM.jpeg',
   },
 ];
 
-const cards2 = [ {title: 'Third', id: 3, pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/1-scaled.jpeg'}, {title: 'Cuatro', id: 1, pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/1-scaled.jpeg',}, {title: 'Cinco', id: 2, pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/1-scaled.jpeg'},];
+const cards3 = [ 
+  {
+    title: 'Wedding', 
+    id: 1, 
+    redirectLink: '/', 
+    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/13-scaled.jpeg'
+  }, {
+    title: 'India', 
+    id: 2,
+    redirectLink: '/', 
+    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/Screen-Shot-2020-06-10-at-10.06.44-PM.jpeg',
+  }, {
+    title: 'Cinco', 
+    id: 3, 
+    redirectLink: '/resume', 
+    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/1-scaled.jpeg'
+  },
+];
 
 
 const Home = () => {
 
   const classes = useStyles();
 
-  const renderCard = cards.map((card, index) => {
-    return <Grid item key={card.index} xs={12} sm={6} md={6}>
+  const renderCard3 = cards3.map((card, index) => {
+    return <Grid item key={card.index} xs={12} sm={6} md={4}>
              <CardComponent title={card.title} redirectLink={card.redirectLink} pictureSource={card.pictureSource}/>
           </Grid> 
   });
 
   const renderCard2 = cards2.map((card, index) => {
-    return <Grid item key={card.index} xs={12} sm={6} md={4} style={{justifyContent: 'space-around'}}>
+    return <Grid item key={card.index} xs={12} sm={6} md={6} style={{justifyContent: 'space-around'}}>
              <CardComponent title={card.title} redirectLink={card.redirectLink} pictureSource={card.pictureSource}/>
           </Grid> 
   });
@@ -82,15 +99,24 @@ const Home = () => {
   return(
     <React.Fragment>
     <HeroSlider/>
-    <Container className={classes.cardGrid} maxWidth="md">
-    <Grid container spacing={4}>
-      {renderCard}
-    </Grid>
+   
+    <Container className={classes.cardGrid} style={{textAlign: 'center', margin:'-3% inherit -3% inherit',}}>
+     <img src='https://alfredorafael.com/wp-content/uploads/2020/06/divider1.png' style={{maxWidth: '70%'}}/>
+     <h1 style={{fontFamily: 'Dancing Script, cursive', textAlign: 'center'}}>Galleries</h1>
     </Container>
+    
+
     <Container>
-    <Grid container spacing={3} style={{marginBottom: '3%'}}>
+
+    <Grid container spacing={4}>
+    {renderCard3}
+    </Grid>
+
+     <Grid container spacing={3} style={{marginBottom: '3%'}}>
     {renderCard2}
     </Grid>
+
+
     </Container>
   <AppFooter/>
 

@@ -7,6 +7,7 @@ import {
   CarouselCaption
 } from 'reactstrap';
 
+
 const items = [
   {
     src: 'https://alfredorafael.com/wp-content/uploads/2020/06/1-scaled.jpeg', //'https://via.placeholder.com/1400x700.png',

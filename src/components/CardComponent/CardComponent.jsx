@@ -1,7 +1,5 @@
 import React from 'react';
-
-
-
+import './CssCardComponent.css';
 
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
@@ -14,8 +12,7 @@ import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
+
 
 
 
@@ -49,44 +46,38 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  headerFont: {
+    fontFamily: 'Dancing Script', 
+    textAlign: 'center'
+  }
 }));
 
 
 const CardComponent = (props) => {
 
-  
 const classes = useStyles();
-
 
 return(
     <React.Fragment>
-    <Card className={classes.card}>
-    <a href={props.redirectLink}>
-{
-}
+    <CssBaseline/>
+
+    <Card className={classes.card} className='highlight-on-hover'>
+    <a href={props.redirectLink} style={{textDecoration: 'none', color: 'inherit'}}>
             <CardMedia
               className={classes.cardMedia}
               image={props.pictureSource}
               title="Image title"
+              
             />
 
             <CardContent className={classes.cardContent}>
-              <Typography gutterBottom variant="h5" component="h2" style={{textAlign: 'center'}}>
-              {props.title}
+              <Typography className={classes.headerFont} gutterBottom variant="h5" component="h2" style={{textAlign: 'center'}}>
+              <h2>{props.title}</h2>
               </Typography>
               <Typography>
                 This is a media card. You can use this section to describe the content.
               </Typography>
             </CardContent>
-            
-            <CardActions>
-              <Button size="small" color="primary">
-                View
-              </Button>
-              <Button size="small" color="primary">
-                Edit
-              </Button>
-            </CardActions>
       </a>
           </Card>
     </React.Fragment>

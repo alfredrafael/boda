@@ -1,0 +1,19 @@
+.highlight-on-hover {
+    transition: transform .5s;
+    position: relative;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+}
+         
+.highlight-on-hover:hover {
+    box-shadow: 0 20px 70px 5px rgba(0,0,0,.15);
+    transform: translateY(-10px);
+    text-decoration: none;
+    transition: transform .5s;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+}
