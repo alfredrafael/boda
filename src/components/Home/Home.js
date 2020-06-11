@@ -46,20 +46,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards2 = [
-  {
-    title: 'Uno', 
-    id: 1, 
-    redirectLink: '/wedding-day',
-    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/13-scaled.jpeg', 
-  }, {
-    title: 'Dos', 
-    id: 2, 
-    redirectLink: '/', 
-    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/Screen-Shot-2020-06-10-at-10.06.44-PM.jpeg',
-  },
-];
-
 const cards3 = [ 
   {
     title: 'Wedding', 
@@ -72,10 +58,24 @@ const cards3 = [
     redirectLink: '/', 
     pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/Screen-Shot-2020-06-10-at-10.06.44-PM.jpeg',
   }, {
-    title: 'Cinco', 
+    title: 'Chile', 
     id: 3, 
     redirectLink: '/resume', 
     pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/1-scaled.jpeg'
+  },
+];
+
+const cards2 = [
+  {
+    title: 'Uno', 
+    id: 1, 
+    redirectLink: '/wedding-day',
+    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/13-scaled.jpeg', 
+  }, {
+    title: 'Dos', 
+    id: 2, 
+    redirectLink: '/', 
+    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/Screen-Shot-2020-06-10-at-10.06.44-PM.jpeg',
   },
 ];
 

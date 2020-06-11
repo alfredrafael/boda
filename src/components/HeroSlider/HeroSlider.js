@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './CssHeroSlider.css';
 import {
   Carousel,
   CarouselItem,
