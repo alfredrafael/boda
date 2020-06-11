@@ -50,7 +50,7 @@ const cards3 = [
   {
     title: 'Wedding', 
     id: 1, 
-    redirectLink: '/', 
+    redirectLink: '/wedding-day', 
     pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/13-scaled.jpeg'
   }, {
     title: 'India', 
