@@ -55,13 +55,13 @@ const cards3 = [
   }, {
     title: 'India', 
     id: 2,
-    redirectLink: '/', 
-    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/Screen-Shot-2020-06-10-at-10.06.44-PM.jpeg',
+    redirectLink: '/india', 
+    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/india_jv1-1-scaled.jpg',
   }, {
     title: 'Chile', 
     id: 3, 
-    redirectLink: '/resume', 
-    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/1-scaled.jpeg'
+    redirectLink: '/chile',
+    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/Suzy-Jose-Chile.png'
   },
 ];
 

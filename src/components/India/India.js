@@ -1,12 +1,17 @@
 import React, {useState}from "react";
 import {
-  UncontrolledCarousel,
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption,
+  UncontrolledCarousel
 } from 'reactstrap';
 
 
 const items = [
   {
-    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/1-scaled.jpeg', //'https://via.placeholder.com/1400x700.png',
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/India_full_fam-scaled.jpg', //'https://via.placeholder.com/1400x700.png',
     altText: 'Slide 1',
     caption: 'Slide 1'
   },
@@ -21,12 +26,17 @@ const items = [
     caption: 'Slide 1'
   },
   {
-    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/18-2-scaled.jpeg', //'https://via.placeholder.com/1400x700.png/0000FF/808080',
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/4-scaled.jpeg', //'https://via.placeholder.com/1400x700.png',
+    altText: 'Slide 4',
+    caption: 'Slide 4'
+  },
+  {
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/5-scaled.jpeg', //'https://via.placeholder.com/1400x700.png/0000FF/808080',
     altText: 'Slide 5',
     caption: 'Slide 5'
   },
   {
-    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/19-2-scaled.jpeg', //'https://via.placeholder.com/1400x700.png',
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/6-2-scaled.jpeg', //'https://via.placeholder.com/1400x700.png',
     altText: 'Slide 1',
     caption: 'Slide 1'
   },
@@ -117,7 +127,7 @@ const items = [
   },
 ];
 
-const WeddingDay = () => <UncontrolledCarousel items={items}  interval={false}/>;
+const India = () => <UncontrolledCarousel items={items}  interval={false}/>;
 
 
-export default WeddingDay;
+export default India;
