@@ -67,15 +67,15 @@ const cards3 = [
 
 const cards2 = [
   {
-    title: 'Uno', 
+    title: 'Mexico', 
     id: 1, 
-    redirectLink: '/wedding-day',
-    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/13-scaled.jpeg', 
+    redirectLink: '/',
+    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/IMG_4169-2-scaled.jpeg', 
   }, {
-    title: 'Dos', 
+    title: 'Aruba', 
     id: 2, 
     redirectLink: '/', 
-    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/Screen-Shot-2020-06-10-at-10.06.44-PM.jpeg',
+    pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/IMG_7964-scaled.jpeg',
   },
 ];
 

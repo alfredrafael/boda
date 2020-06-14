@@ -24,7 +24,7 @@ const Example = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   useEffect(() => {
-    $(".navbar-fading-effect").css("border-bottom", "1px solid rgba(0, 0, 0, .10)");
+    //$(".navbar-fading-effect").css("border-bottom", "1px solid rgba(0, 0, 0, .10)");
 
     window.onscroll = () => {
       var scrollStatus = $(window).scrollTop();
@@ -55,14 +55,16 @@ const Example = (props) => {
                 <NavItem className="nav-link hovered-link" id="home-link">
                   <a href='/'>
                     Home
-                </a>
+                  </a>
                 </NavItem>
 
+               {/* 
                 <NavItem className="nav-link hovered-link">
-                  <a href='/resume'>
-                    Resume
-            </a>
+                <a href='/resume'>
+                Resume
+                </a>
                 </NavItem>
+              */}
 
               </Nav>
               {/* <NavbarText>Simple Text</NavbarText> */}
