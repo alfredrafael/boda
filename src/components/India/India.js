@@ -1,12 +1,9 @@
 import React, {useState}from "react";
 import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption,
   UncontrolledCarousel
 } from 'reactstrap';
+
+import './CssIndia.css';
 
 
 const items = [
@@ -70,13 +67,26 @@ const items = [
     // altText: 'Slide 12',
     // caption: 'Slide 1'
   },
+   {
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/PC260077-scaled.jpg', //'https://via.placeholder.com/1400x700.png',
+    // altText: 'Slide 11',
+    // caption: 'Slide 1'
+  },
+  {
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/P1050575-scaled.jpg', //'https://via.placeholder.com/1400x700.png',
+    // altText: 'Slide 12',
+    // caption: 'Slide 1'
+  },
+  {
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/P1050565-scaled.jpg'
+  },
   {
     src: 'https://alfredorafael.com/wp-content/uploads/2020/06/India_taj2-scaled-e1592117043198.jpg',
     caption: 'Last Picture ^_^'
   }
 ];
 
-const India = () => <UncontrolledCarousel items={items}  interval={false}/>;
+const India = () => <UncontrolledCarousel items={items}  interval={false} />;
 
 
 export default India;

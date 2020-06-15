@@ -2,6 +2,7 @@ import React, {useState, useEffect}from "react";
 import {
   UncontrolledCarousel
 } from 'reactstrap';
+import './CssChile.css';
 
 
 const items = [
@@ -90,7 +91,7 @@ const items = [
 ];
 
 
-const Chile = () => <UncontrolledCarousel items={items}  interval={false}/>;
+const Chile = () => <UncontrolledCarousel items={items}  interval={false} />;
 
 
 export default Chile;
