@@ -48,27 +48,36 @@ const Example = (props) => {
           <NavbarBrand href="/">
               <img class="navbar-logo" alt="Suzy & Jose Logo" src={'https://alfredorafael.com/wp-content/uploads/2020/06/sj-white.png'} style={{ maxWidth: '17%' }} />
             </NavbarBrand>
-            <NavbarToggler onClick={toggle} />
-            <Collapse isOpen={isOpen} navbar class={isOpen && 'makeTurquoise'}>
-              <Nav className="ml-auto" navbar>
+            {/*
+            <NavbarToggler onClick={toggle} style={{visibility: 'hidden'}}/>
+             <Collapse isOpen={isOpen} navbar class={isOpen && 'makeTurquoise'}>  */}
+
+
+             {/* 
+             <Nav className="ml-auto" navbar>
+
+                <NavItem className="nav-link hovered-link" id="about-link">
+                <a href='/'>
+                <img class="navbar-item" alt="about link-item" src={'https://alfredorafael.com/wp-content/uploads/2020/06/About-boda.png'} style={{float: 'right', maxWidth: '16%', padding: '0'}} />
+                </a>
+                </NavItem>
+
 
                 <NavItem className="nav-link hovered-link" id="home-link">
                   <a href='/'>
-                    Home
+                  <img class="navbar-item" alt="Home link-tiem" src={'https://alfredorafael.com/wp-content/uploads/2020/06/Home-boda.png'} style={{float: 'right', maxWidth: '16%', padding: '0'}} />
                   </a>
                 </NavItem>
 
-               {/* 
-                <NavItem className="nav-link hovered-link">
-                <a href='/resume'>
-                Resume
-                </a>
-                </NavItem>
-              */}
+                
+                </Nav>
+               */}
+                
+ 
 
-              </Nav>
+              
               {/* <NavbarText>Simple Text</NavbarText> */}
-            </Collapse>
+           {/* </Collapse> */}
           </Container>
         </Navbar>
       </React.Fragment>

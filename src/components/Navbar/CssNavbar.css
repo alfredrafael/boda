@@ -5,9 +5,9 @@
     font-weight: thin;
   }
     
-    .navbar-border-shadow {
+  .navbar-border-shadow {
       /* box-shadow: 0 5px 5px -2px rgba(0,0,0,.2) !important;     */
-    }
+  }
   
   .navbar-logo {
       max-width: 34%;
@@ -35,6 +35,11 @@
   .navbar-toggler-icon {
     background: #040182;
   }
+
+  .nav-link {
+    margin-left: 0 !important;
+    display: none;
+  }
   
   
   /*/////////////////// MEDIA QUERIES START /////////////////////////////////*/
@@ -43,9 +48,11 @@
     .navbar-logo {
       max-width: 20% !important;
       position: absolute;
-      margin-top: -4%
+      margin-top: -3%
     }
-    
+    .navbar-item {
+      margin-top: -4%     
+    }
   }
   
   
@@ -53,17 +60,21 @@
   /*Galaxy 5s*/
    @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
   
+    
     .navbar-css {
-      background: linear-gradient( #040182, #7573bf) !important;
+      /* background: linear-gradient( #040182, #7573bf) !important; */
+      margin-top: -7%;
     }
-  
-    .navbar-fading-effect {
-      background: linear-gradient( #040182, #7573bf) !important;
+
+    .makeTurquoise {
+      background: linear-gradient(rgba(0, 200, 255, .5), rgba(0, 200, 255, .3));
     }
-  
-    .navbar-toggler {
-      position: relative;
+
+
+    #keepTransparency {
+      background-color: inherit;
     }
+    
   
   }
   
@@ -71,17 +82,17 @@
   
   @media only screen and (min-width: 360px) and (max-width: 767px) {
   
-  
     .navbar-css {
-      background: linear-gradient( #040182, #7573bf) !important;
+      /* background: linear-gradient( #040182, #7573bf) !important; */
+      margin-top: -7%;
     }
-  
-    .navbar-fading-effect {
-      background: linear-gradient( #040182, #7573bf) !important;
+
+    .makeTurquoise {
+      background: linear-gradient(rgba(0, 200, 255, .5), rgba(0, 200, 255, .3));
     }
-  
-    .navbar-toggler {
-      position: relative;
+
+    #keepTransparency {
+      background-color: inherit;
     }
   
   }
@@ -89,17 +100,17 @@
   /*iPhone XR*/
   @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
   
-  
-    .navbar-css {
-      background: linear-gradient( #040182, #7573bf) !important;
+  .navbar-css {
+      /* background: linear-gradient( #040182, #7573bf) !important; */
+      margin-top: -7%;
     }
-  
-    .navbar-fading-effect {
-      background: linear-gradient( #040182, #7573bf) !important;
+
+    .makeTurquoise {
+      background: linear-gradient(rgba(0, 200, 255, .5), rgba(0, 200, 255, .3));
     }
-  
-    .navbar-toggler {
-      position: relative;
+
+    #keepTransparency {
+      background-color: inherit;
     }
   
   
@@ -110,11 +121,16 @@
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
   
     .navbar-css {
-      background: linear-gradient( #040182, #7573bf) !important;
+      /* background: linear-gradient( #040182, #7573bf) !important; */
+      margin-top: -7%;
     }
-  
-    .navbar-fading-effect {
-      background: linear-gradient( #040182, #7573bf) !important;
+
+    .makeTurquoise {
+      background: linear-gradient(rgba(0, 200, 255, .5), rgba(0, 200, 255, .3));
+    }
+
+    #keepTransparency {
+      background-color: inherit;
     }
   
     .navbar-toggler {
@@ -127,11 +143,17 @@
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
   
     .navbar-css {
-      background: linear-gradient( #040182, #7573bf) !important;
+      /* background: linear-gradient( #040182, #7573bf) !important; */
+      margin-top: -7%;
     }
-  
-    .navbar-fading-effect {
-      background: linear-gradient( #040182, #7573bf) !important;
+
+    .makeTurquoise {
+      background: linear-gradient(rgba(0, 200, 255, .5), rgba(0, 200, 255, .3));
+    }
+
+
+    #keepTransparency {
+      background-color: inherit;
     }
   
     .navbar-toggler {
@@ -145,12 +167,21 @@
   @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   
     .navbar-css {
-      background: linear-gradient( #040182, #7573bf) !important;
+      /* background: linear-gradient( #040182, #7573bf) !important; */
+      margin-top: -7%;
     }
-  
-    .navbar-fading-effect {
-      background: linear-gradient( #040182, #7573bf) !important;
+
+    .makeTurquoise {
+      background: linear-gradient(rgba(0, 200, 255, .5), rgba(0, 200, 255, .3));
     }
+
+
+    #keepTransparency {
+      background-color: inherit;
+    }
+
+
+
   
     .navbar-toggler {
       position: relative;
@@ -162,13 +193,17 @@
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   
     .navbar-css {
-      background: linear-gradient( #040182, #7573bf) !important;
+      /* background: linear-gradient( #040182, #7573bf) !important; */
+      margin-top: -7%;
     }
-  
-    .navbar-fading-effect {
-      background: linear-gradient( #040182, #7573bf) !important;
+
+    .makeTurquoise {
+      background: linear-gradient(rgba(0, 200, 255, .5), rgba(0, 200, 255, .3));
     }
-  
+
+    #keepTransparency {
+      background-color: inherit;
+    }
     .navbar-toggler {
       position: relative;
     }
@@ -178,11 +213,16 @@
   @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
   
     .navbar-css {
-      background: linear-gradient( #040182, #7573bf) !important;
+      /* background: linear-gradient( #040182, #7573bf) !important; */
+      margin-top: -7%;
     }
-  
-    .navbar-fading-effect {
-      background: linear-gradient( #040182, #7573bf) !important;
+
+    .makeTurquoise {
+      background: linear-gradient(rgba(0, 200, 255, .5), rgba(0, 200, 255, .3));
+    }
+
+    #keepTransparency {
+      background-color: inherit;
     }
   
     .navbar-toggler {
@@ -193,13 +233,17 @@
   
   /*Galaxy 5s*/
   @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  
     .navbar-css {
-      background: linear-gradient( #040182, #7573bf) !important;
+      /* background: linear-gradient( #040182, #7573bf) !important; */
+      margin-top: -7%;
     }
-  
-    .navbar-fading-effect {
-      background: linear-gradient( #040182, #7573bf) !important;
+
+    .makeTurquoise {
+      background: linear-gradient(rgba(0, 200, 255, .5), rgba(0, 200, 255, .3));
+    }
+
+    #keepTransparency {
+      background-color: inherit;
     }
   
     .navbar-toggler {
@@ -212,13 +256,17 @@
   /*Samsung Galaxy S9 Media Queries (In terms of Mobile only)*/
   
   @media only screen and (min-width: 360px) and (max-width: 767px) {
-  
     .navbar-css {
-      background: linear-gradient( #040182, #7573bf) !important;
+      /* background: linear-gradient( #040182, #7573bf) !important; */
+      margin-top: -7%;
     }
-  
-    .navbar-fading-effect {
-      background: linear-gradient( #040182, #7573bf) !important;
+
+    .makeTurquoise {
+      background: linear-gradient(rgba(0, 200, 255, .5), rgba(0, 200, 255, .3));
+    }
+
+    #keepTransparency {
+      background-color: inherit;
     }
   
     .navbar-toggler {
