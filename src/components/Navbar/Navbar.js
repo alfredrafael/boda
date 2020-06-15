@@ -48,8 +48,8 @@ const Example = (props) => {
           <NavbarBrand href="/">
               <img class="navbar-logo" alt="Suzy & Jose Logo" src={'https://alfredorafael.com/wp-content/uploads/2020/06/sj-white.png'} style={{ maxWidth: '17%' }} />
             </NavbarBrand>
+            <NavbarToggler onClick={toggle} style={{visibility: 'hidden', marginBottom: '-10%'}}/>
             {/*
-            <NavbarToggler onClick={toggle} style={{visibility: 'hidden'}}/>
              <Collapse isOpen={isOpen} navbar class={isOpen && 'makeTurquoise'}>  */}
 
 
