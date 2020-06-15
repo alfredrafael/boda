@@ -28,7 +28,7 @@ const Example = (props) => {
 
     window.onscroll = () => {
       var scrollStatus = $(window).scrollTop();
-      if (scrollStatus > 344) {
+      if (scrollStatus > 318) {
         $(".navbar-fading-effect").css("background", "rgba(0, 200, 255, .5)"); // changes to...
         $(".navbar-fading-effect").css("transition", "1s");
         // $(".navbar-border-shadow").css("box-shadow", "0 5px 5px -2px rgba(0,0,0,.2) !important");
@@ -48,7 +48,7 @@ const Example = (props) => {
           <NavbarBrand href="/">
               <img class="navbar-logo" alt="Suzy & Jose Logo" src={'https://alfredorafael.com/wp-content/uploads/2020/06/sj-white.png'} style={{ maxWidth: '17%' }} />
             </NavbarBrand>
-            <NavbarToggler onClick={toggle} style={{visibility: 'hidden', marginBottom: '-10%'}}/>
+            <NavbarToggler onClick={toggle} style={{visibility: 'hidden', marginBottom: '5%'}}/>
             {/*
              <Collapse isOpen={isOpen} navbar class={isOpen && 'makeTurquoise'}>  */}
 
