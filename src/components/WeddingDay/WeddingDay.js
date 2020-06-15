@@ -3,6 +3,8 @@ import {
   UncontrolledCarousel,
 } from 'reactstrap';
 
+import './CssWeddingDay.css';
+
 
 const items = [
   {
