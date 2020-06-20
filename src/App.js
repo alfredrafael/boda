@@ -10,6 +10,9 @@ import Country from './components/Country';
 import WeddingDay from './components/WeddingDay';
 import Chile from './components/Chile';
 import India from './components/India';
+import Mexico from './components/Mexico';
+import Aruba from './components/Aruba';
+
 
 
 const App = () => {
@@ -27,6 +30,8 @@ const App = () => {
            <Route path="/countries" component={FetchingCountries}/>
            <Route path="/chile" component={Chile} />
            <Route path="/india" component={India} />
+           <Route path="/mexico" component={Mexico} />
+           <Route path="/aruba" component={Aruba} />
          </Switch>
        {/* //////////////////////////////////////////////////////////////////////// */}
         

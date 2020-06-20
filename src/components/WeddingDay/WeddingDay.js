@@ -86,6 +86,18 @@ const items = [
     // altText: 'Slide 16',
     // caption: 'Last Picture ^_^'
   },
+  {
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/Mac-Evelyn.jpg'
+  },
+  {
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/mac_jose_suzy_amoni.jpg'
+  },
+  {
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/Evelyn.jpg'
+  },
+  {
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/photo-10.jpg'
+  }
 ];
 
 const WeddingDay = () => <UncontrolledCarousel items={items}  interval={false}/>;

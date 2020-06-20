@@ -74,8 +74,8 @@ return(
               <Typography className={classes.headerFont} gutterBottom variant="h5" component="h2" style={{textAlign: 'center'}}>
               <h2>{props.title}</h2>
               </Typography>
-              <Typography>
-                This is a media card. You can use this section to describe the content.
+              <Typography style={{textAlign: 'center'}}>
+                {props.description}
               </Typography>
             </CardContent>
       </a>

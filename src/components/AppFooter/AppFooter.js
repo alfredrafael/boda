@@ -12,16 +12,16 @@ return(
     <Row>
       
     <Col>
-        Column 1    
+    <br/>
+    <img style={{maxWidth: '25%'}} src='https://alfredorafael.com/wp-content/uploads/2019/02/whileLogoName-e1551079673184.png'/>
     </Col>
     
     <Col>
-        Column 2
     </Col>
     
     <Col>
-        Column 3
     </Col>
+    
     </Row>
     </Container>
 

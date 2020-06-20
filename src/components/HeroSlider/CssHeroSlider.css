@@ -1,0 +1,22 @@
+
+  span.carousel-control-next-icon, 
+  span.carousel-control-prev-icon
+  {
+    display: none;
+}
+
+  /*/////////////////// MEDIA QUERIES START /////////////////////////////////*/
+  
+  @media screen and (max-width: 700px) and (-webkit-min-device-pixel-ratio: 1) {
+    .mobile-hero-picture {
+      display: block;
+    }
+    .desktop-hero-video {
+      display: none;
+    }
+  
+    .loading-picture {
+      display: none;
+    }
+  }
+  
