@@ -51,9 +51,10 @@ const cards3 = [
     id: 1, 
     redirectLink: '/wedding-day', 
     pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/13-scaled.jpeg',
-    description: 'Celebrating 30 Suzy and Jose 30 years today!'
+    description: 'June of 2020: Thirty Year Anniversary!'
 
-  }, {
+  }, 
+  {
     title: 'India', 
     id: 2,
     redirectLink: '/india', 

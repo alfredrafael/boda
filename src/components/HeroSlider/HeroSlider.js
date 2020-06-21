@@ -56,7 +56,7 @@ const Hero = (props) => {
         item.video ?
         <div class="desktop-hero-video" style={{backgroundColor: 'black'}}>
           <div style={{opacity: '.7'}}>
-            <ReactPlayer loop='true' width='100vw' height='100vh'  url="https://www.youtube.com/embed/OVVIzA44iTY" playing={true} allowfullscreen />
+            <ReactPlayer loop='true' muted playing={true} width='100vw' height='100vh'  url="https://www.youtube.com/embed/OVVIzA44iTY" allowfullscreen />
           </div>
         </div>
 
