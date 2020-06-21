@@ -85,8 +85,14 @@ const items = [
     // caption: 'w'
   },
   {
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/IMG_3169-scaled.jpg'
+  },
+  {
     src: 'https://alfredorafael.com/wp-content/uploads/2020/06/IMG_3093-scaled.jpg',
     // caption: 'y'
+  },
+  {
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/IMG_2003-scaled.jpg'
   },
 ];
 
