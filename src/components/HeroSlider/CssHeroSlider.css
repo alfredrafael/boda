@@ -1,9 +1,13 @@
 
   span.carousel-control-next-icon, 
-  span.carousel-control-prev-icon
-  {
+  span.carousel-control-prev-icon {
     display: none;
-}
+  }
+
+
+  .mobile-hero-picture {
+    display: none;
+  }
 
   /*/////////////////// MEDIA QUERIES START /////////////////////////////////*/
   
@@ -11,12 +15,11 @@
     .mobile-hero-picture {
       display: block;
     }
-    .desktop-hero-video {
+
+    .desktop-hero-video, 
+    .desktop-hero-picture {
       display: none;
     }
-  
-    .loading-picture {
-      display: none;
-    }
+
   }
   

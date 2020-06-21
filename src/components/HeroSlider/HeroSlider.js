@@ -54,13 +54,13 @@ const Hero = (props) => {
 
       {
         item.video ?
-        <div style={{backgroundColor: 'black'}}>
+        <div class="desktop-hero-video" style={{backgroundColor: 'black'}}>
           <div style={{opacity: '.7'}}>
             <ReactPlayer loop='true' width='100vw' height='100vh'  url="https://www.youtube.com/embed/OVVIzA44iTY" playing={true} allowfullscreen />
           </div>
         </div>
 
-      :<div style={{backgroundColor: 'black'}}>
+      :<div class="desktop-hero-picture" style={{backgroundColor: 'black'}}>
        <div style={{opacity: '.7'}}>
           <img src={item.src} alt={item.altText} style={{width: '100%'}}/>
           <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
@@ -73,21 +73,26 @@ const Hero = (props) => {
   });
 
   return (
+<React.Fragment>
+  <div className="mobile-hero-picture" style={{ height: '100%' }}>
+    <img src="https://alfredorafael.com/wp-content/uploads/2020/06/20-scaled-e1591227665526.jpeg" style={{ background: 'cover', maxWidth: '100%' }} alt="React.js logo" />
+  </div>
 
-    
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-      className="carousel-fade"
-      interval={false}
-    >
-      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-      {slides}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-    </Carousel>
-  );
+
+<Carousel
+activeIndex={activeIndex}
+next={next}
+previous={previous}
+className="carousel-fade"
+interval={false}
+>
+<CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+{slides}
+<CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+<CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+</Carousel>
+</React.Fragment>
+);
 }
 
 export default Hero;
