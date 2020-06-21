@@ -58,8 +58,7 @@ const cards3 = [
     id: 2,
     redirectLink: '/india', 
     pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/india_jv1-1-scaled.jpg',
-    description: 'Trip to India in [year goes here]'
-
+    description: 'Visiting family and traveling India'
   }, 
   {
     title: 'Chile', 
@@ -67,7 +66,6 @@ const cards3 = [
     redirectLink: '/chile',
     pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/Suzy-Jose-Chile.png',
     description: 'Trip to Chile in February 2017'
-
   },
 ];
 

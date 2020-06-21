@@ -58,8 +58,7 @@ const items = [
   },
   {
     src: 'https://alfredorafael.com/wp-content/uploads/2020/06/P1050575-scaled.jpg', //'https://via.placeholder.com/1400x700.png',
-    // altText: 'Slide 12',
-    //  caption: 'Slide 13'
+ 
   },
   {
     src: 'https://alfredorafael.com/wp-content/uploads/2020/06/P1050565-scaled.jpg'
