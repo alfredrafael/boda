@@ -87,6 +87,9 @@ const items = [
     // caption: 'Last Picture ^_^'
   },
   {
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/photo.jpg'
+  },
+  {
     src: 'https://alfredorafael.com/wp-content/uploads/2020/06/Mac-Evelyn.jpg'
   },
   {
@@ -97,7 +100,11 @@ const items = [
   },
   {
     src: 'https://alfredorafael.com/wp-content/uploads/2020/06/photo-10.jpg'
-  }
+  },
+  {
+    src: 'https://alfredorafael.com/wp-content/uploads/2020/06/photo-6.jpg'
+  },
+ 
 ];
 
 const WeddingDay = () => <UncontrolledCarousel items={items}  interval={false}/>;
