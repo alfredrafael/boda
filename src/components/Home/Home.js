@@ -51,8 +51,7 @@ const cards3 = [
     id: 1, 
     redirectLink: '/wedding-day', 
     pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/13-scaled.jpeg',
-    description: 'Thirty Year Anniversary was on June 2020!'
-
+    description: 'June 23, 1990'
   }, 
   {
     title: 'India', 
