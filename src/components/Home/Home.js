@@ -51,7 +51,7 @@ const cards3 = [
     id: 1, 
     redirectLink: '/wedding-day', 
     pictureSource: 'https://alfredorafael.com/wp-content/uploads/2020/06/13-scaled.jpeg',
-    description: 'June of 2020: Thirty Year Anniversary!'
+    description: 'Thirty Year Anniversary was on June 2020!'
 
   }, 
   {
